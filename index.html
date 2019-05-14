@@ -1,28 +1,46 @@
 <!DOCTYPE HTML>
 <html>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>MK Investment</title>
+    <header>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>MK Investment</title>
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="index.css" />
+    </header>
     <body>
-        <div id="header">
-            <div class="logo"></div>
-            <div class="intro">This is the introduction of the company</div>
-        </div>
-        <div>
-            <div>
-                <label>First Name</label>
-                <input type="text" required />
+        <section id="header">
+            <div class="logo-container">
+                <img id="logo" src="images/logo.png" />
             </div>
-            <div>
-                <label>Last Name</label>
-                <input type="text" required />
+            <hr />
+            <div class="intro">
+                <span>
+                    Investment Solution for growth of your income
+                </span>
             </div>
+        </section>
+        <section id="contact">
+            <form>
+                <span class="contact-text"> Get in touch </span>
+                <div class="contact-field">
+                    <input type="text" placeholder="Name" required />
+                </div>
+                <div class="contact-field">
+                    <input type="email" placeholder="Email" required />
+                </div>
+                <div class="contact-field">
+                    <textarea placeholder="Message" draggable="false"></textarea>
+                </div>
+                <div class="contact-field">
+                    <button>Send</button>
+                </div>
+            </form>
+        </section>
+        <section id="footer">
             <div>
-                <label>Email</label>
-                <input type="email" required />
+                <span>Warsaw, Poland</span>
+                <span>mateusz@mkinvestment.com.pl</span>
+                <span>+48 505 427 227</span>
             </div>
-        </div>
-        <div id="footer">
-
-        </div>
+        </section>
     </body>
 </html>

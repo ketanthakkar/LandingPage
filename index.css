@@ -53,7 +53,11 @@ hr {
 #profile {
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: rgba(0,0,0,0.7);
+}
+
+#profile > div {
+    margin: 40px 0;
 }
 
 .photo {
@@ -68,13 +72,14 @@ hr {
 
 .description p {
     color: white;
-    font-size: 25px;
+    font-size: 22px;
     padding: 20px;
+    width: 80%;
 }
 
 .photo img {
-    width: 350px;
-    height: 400px;
+    width: 230px;
+    height: 300px;
     padding: 20px;
 }
 
@@ -83,7 +88,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 form {
@@ -94,9 +99,10 @@ form {
     display: block;
     font-size: 30px;
     padding: 0 10px;
-    color: #403866;
+    color: rgba(0,0,0,0.7);
     text-transform: uppercase;
     margin: 0px 0 30px;
+    text-align: center;
 }
 
 .contact-field {
@@ -139,26 +145,39 @@ textarea {
 button {
     width: 100px;
     height: 40px;
-    border: 0;
-    background-color: rgba(0,0,0,0.7);
-    color: white;
+    color: rgba(0,0,0,0.7);
     cursor: pointer;
+    background: none;
+    border: 2px solid rgba(0,0,0,0.7);
+}
+
+button:hover {
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    transition: all 0.5s
 }
 
 /* Footer */
 #footer {
     display: flex;
     justify-content: center;
-    background-color: rgba(0,0,0,0.7);
-}
-
-#footer div {
-    padding: 20px 0;
-}
-
-#footer span {
-    font-size: 30px;
-    display: block;
-    padding: 10px 0;
-    color: #FCDC01;
-}
+    background:linear-gradient(#fff,#fff) center/1px 60% no-repeat;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding:20px 0;
+  }
+  
+  #footer > div {
+    display: table;
+    margin:60px auto;
+  }
+  
+  .footer-detail {
+    display: table-row;
+  }
+  
+  .footer-detail > span {
+    display: table-cell;
+    padding:0 10px;
+    font-size: 22px;
+    color: white;
+  }

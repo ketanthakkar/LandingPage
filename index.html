@@ -4,6 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>MK Investment</title>
         <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="index.css" />
     </header>
     <body>
@@ -38,7 +39,7 @@
                     <input type="email" placeholder="Email" required />
                 </div>
                 <div class="contact-field">
-                    <textarea placeholder="Message" draggable="false"></textarea>
+                    <textarea placeholder="Message" draggable="false" required></textarea>
                 </div>
                 <div class="contact-field">
                     <button>Send</button>
@@ -46,25 +47,29 @@
             </form>
         </section>
         <section id="footer">
-            <div>
-                <div class="footer-detail">
-                    <span>Name:</span>
-                    <span>Mateusz Kośka</span>
-                </div>
-                <div class="footer-detail">
-                    <span>Address:</span>
+            <div class="contact-detail">
+                <div>
+                    <span style="font-size: 22px; color:white">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
                     <span>Warsaw, Poland</span>
                 </div>
-            </div>
-            <div>
-                <div class="footer-detail">
-                    <span>Email:</span>
-                    <span>mateusz@mkinvestment.com.pl</span>
-                </div>
-                <div class="footer-detail">
-                    <span>Telephone:</span>
+                <div>
+                    <span style="font-size: 22px; color:white">
+                        <i class="fas fa-phone-volume"></i>
+                    </span>
                     <span>+48 505 427 227</span>
                 </div>
+                <div>
+                    <span style="font-size: 22px; color:white">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span>mateusz@mkinvestment.com.pl</span>
+                </div>
+            </div>
+            <div class="company-detail">
+                <span>About the company</span>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
             </div>
         </section>
     </body>
